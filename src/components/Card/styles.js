@@ -12,7 +12,6 @@ export const StyledContainer = styled.div`
   border-radius: 50px;
   max-width: 35em;
   display: inline-flex;
-  height: 16em;
   margin: 1em;
   width: 30em;
   img {
