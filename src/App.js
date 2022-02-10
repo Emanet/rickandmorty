@@ -6,7 +6,7 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="/locations" element={<Locations />}></Route>
+          <Route path="/" element={<Locations />}></Route>
           <Route path="/residents/:location_id" element={<Residents />}></Route>
         </Routes>
       </div>
