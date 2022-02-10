@@ -25,4 +25,4 @@ Bu mini projenin amacı React teknolojisi üzerine pratik yapmaktır.
 ## Demo
 
 
-<a href="https://rickandmorty-qujm98g0u-emanet.vercel.app/">![image](https://user-images.githubusercontent.com/44415149/153476634-ac375972-4801-45ac-a412-ea2cddd6cdb2.png)</a>
+<a href="http://rickandmorty-ecru.vercel.app/">![image](https://user-images.githubusercontent.com/44415149/153476634-ac375972-4801-45ac-a412-ea2cddd6cdb2.png)</a>
