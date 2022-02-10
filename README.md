@@ -11,3 +11,8 @@ Bu mini projenin amacı React teknolojisi üzerine pratik yapmaktır.
 **Styled Components:**
 
 **GraphQL**
+
+## Demo
+
+
+<a href="https://rickandmorty-qujm98g0u-emanet.vercel.app/">![image](https://user-images.githubusercontent.com/44415149/153476634-ac375972-4801-45ac-a412-ea2cddd6cdb2.png)</a>
