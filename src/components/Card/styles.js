@@ -17,7 +17,7 @@ export const StyledContainer = styled.div`
   width: 30em;
   img {
     height: 320px;
-    border-radius: 50px;
+    border-radius: 51px;
     max-width: 100%;
   }
   .character-name {
