@@ -30,13 +30,15 @@ function Locations() {
           </div>
         );
       })}
-      {[...Array(pageCount).keys()].map((i) => {
-        return (
-          <button onClick={() => setCurrentPage(i + 1)} id={i} key={i}>
-            {i + 1}
-          </button>
-        );
-      })}
+      <div>
+        {[...Array(pageCount).keys()].map((i) => {
+          return (
+            <button onClick={() => setCurrentPage(i + 1)} id={i} key={i}>
+              {i + 1}
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }
