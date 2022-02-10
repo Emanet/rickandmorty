@@ -12,6 +12,13 @@ Bu mini projenin amacı React teknolojisi üzerine pratik yapmaktır.
 
 **GraphQL**
 
+## Yükleme
+
+```bash 
+  yarn
+  yarn start
+```
+
 ## Demo
 
 
