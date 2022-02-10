@@ -21,7 +21,9 @@ function Card({ name, image, species, type, gender, origin }) {
           </div>
           <div className="firs-seen">
             <p className="first-seen-header">Type</p>
-            <p className="first-seen-location">{type}</p>
+            <p className="first-seen-location">
+              {type || "There no type information."}
+            </p>
           </div>
           <div className="firs-seen">
             <p className="first-seen-header">Gender</p>
