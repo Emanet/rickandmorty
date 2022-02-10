@@ -10,10 +10,10 @@ export const Wrapper = styled.div`
 export const StyledContainer = styled.div`
   background-color: #3c3e44;
   border-radius: 50px;
-  max-width: 35em;
+  max-width: 60em;
   display: inline-flex;
   margin: 1em;
-  width: 30em;
+  width: 40em;
   img {
     height: 320px;
     border-radius: 51px;
@@ -26,7 +26,7 @@ export const StyledContainer = styled.div`
     display: flex;
   }
   .character-info {
-    margin-left: 2em;
+    margin-left: 3em;
     font-size: 14px;
   }
   .current-status {
