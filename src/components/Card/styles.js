@@ -22,6 +22,9 @@ export const StyledContainer = styled.div`
   .character-name {
     color: white;
   }
+  .character-img {
+    display: flex;
+  }
   .character-info {
     margin-left: 2em;
     font-size: 14px;
