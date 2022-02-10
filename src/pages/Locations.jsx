@@ -1,6 +1,7 @@
 import useLocations from "../hooks/useLocations";
 import { useEffect, useState } from "react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Locations() {
   const [pageCount, setPageCount] = useState(0);
@@ -21,7 +22,8 @@ function Locations() {
       >
         {locations.results.map((item) => {
           return (
-            <div
+            <Link
+              to={"/residents/" + item.id}
               style={{
                 display: "flex",
                 background: "#E9DAC1",
@@ -30,6 +32,8 @@ function Locations() {
                 textAlign: "center",
                 flexDirection: "column",
                 margin: "1em",
+                textDecoration: "none",
+                color: "black",
               }}
               key={item.id}
             >
@@ -39,7 +43,7 @@ function Locations() {
                 <br />
                 {"Type: " + item.type}
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>

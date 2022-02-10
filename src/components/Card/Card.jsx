@@ -1,30 +1,35 @@
 import React from "react";
 import { StyledContainer, Wrapper } from "./styles";
-function Card() {
+function Card({ name, image, species, type, gender, origin }) {
   return (
     <Wrapper className="wrapper">
       <StyledContainer className="container">
         <div className="character-img">
-          <img
-            src="https://rickandmortyapi.com/api/character/avatar/365.jpeg"
-            alt=""
-          />
+          <img src={image} alt="" />
         </div>
         <div className="character-info">
-          <h2 className="character-name">Tricia Lange</h2>
-          <div className="status">
+          <h2 className="character-name">{name}</h2>
+          {/*   <div className="status">
             <div className="status-code"></div>
             <div className="current-status">
               <p>Alive - Human</p>
             </div>
-          </div>
+          </div> */}
           <div className="location">
-            <p className="last-known-location">Last known location</p>
-            <p className="location-name">Earth</p>
+            <p className="last-known-location">Species</p>
+            <p className="location-name">{species}</p>
           </div>
           <div className="firs-seen">
-            <p className="first-seen-header">First seen in</p>
-            <p className="first-seen-location">The whirly dirly</p>
+            <p className="first-seen-header">Type</p>
+            <p className="first-seen-location">{type}</p>
+          </div>
+          <div className="firs-seen">
+            <p className="first-seen-header">Gender</p>
+            <p className="first-seen-location">{gender}</p>
+          </div>
+          <div className="firs-seen">
+            <p className="first-seen-header">Origin</p>
+            <p className="first-seen-location">{origin}</p>
           </div>
         </div>
       </StyledContainer>

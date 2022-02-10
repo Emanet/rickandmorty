@@ -16,7 +16,7 @@ export const StyledContainer = styled.div`
   margin: 1em;
   width: 30em;
   img {
-    height: 256px;
+    height: 320px;
     border-radius: 50px;
     max-width: 100%;
   }
@@ -25,8 +25,6 @@ export const StyledContainer = styled.div`
   }
   .character-info {
     margin-left: 2em;
-    display: flex;
-    flex-direction: column;
     font-size: 14px;
   }
   .current-status {
