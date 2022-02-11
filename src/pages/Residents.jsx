@@ -6,7 +6,7 @@ function Residents() {
   console.log(location_id);
   const residents = useResidents(location_id);
   return (
-    <div>
+    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
       {residents.map((item) => (
         <Card
           name={item.name}
