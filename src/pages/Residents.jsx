@@ -8,7 +8,7 @@ function Residents() {
   const residents = useResidents(location_id);
   return (
     <div>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+      <div style={{ display: "grid" }}>
         {residents.map((item) => (
           <Card
             name={item.name}

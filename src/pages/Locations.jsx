@@ -49,6 +49,7 @@ function Locations() {
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
         {[...Array(pageCount).keys()].map((i) => {
+          console.log(pageCount + "pageCount");
           return (
             <button onClick={() => setCurrentPage(i + 1)} id={i} key={i}>
               {i + 1}
