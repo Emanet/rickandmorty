@@ -69,5 +69,8 @@ export const StyledLink = styled.a`
 `;
 export const GetBackHomeButton = styled.button`
   display: flex;
-  margin: 0 auto;
+  border-radius: 20px;
+  margin: 0px auto;
+  border: none;
+  padding: 5px;
 `;
