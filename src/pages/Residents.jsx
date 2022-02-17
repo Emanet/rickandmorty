@@ -1,14 +1,14 @@
 import { useParams } from "react-router-dom";
 import useResidents from "../hooks/useResidents";
 import Card from "../components/Card/Card";
-
+import { ResidentCards, StyledLink, GetBackHomeButton } from "./styles";
 function Residents() {
   const { location_id } = useParams();
   console.log(location_id);
   const residents = useResidents(location_id);
   return (
-    <div>
-      <div style={{ display: "flex", flexWrap: "wrap",justifyContent:"center" }}>
+    <>
+      <ResidentCards>
         {residents.map((item) => (
           <Card
             name={item.name}
@@ -20,13 +20,11 @@ function Residents() {
             status={item.status}
           />
         ))}
-      </div>
-      <a style={{ textDecoration: "none" }} href="/">
-        <button style={{ display: "flex", margin: "0 auto" }}>
-          Get back to locations.
-        </button>
-      </a>
-    </div>
+      </ResidentCards>
+      <StyledLink href="/">
+        <GetBackHomeButton>Get back to locations.</GetBackHomeButton>
+      </StyledLink>
+    </>
   );
 }
 

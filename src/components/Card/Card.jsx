@@ -5,6 +5,13 @@ import {
   DeadStatus,
   AliveStatus,
   UnknownStatus,
+  CharacterName,
+  ResidentInfoWrappter,
+  CharacterInfo,
+  CharacterImage,
+  CharacterInfoExpression,
+  CharacterInfoExpressionValue,
+  CharacterImageContainer,
 } from "./styles";
 function Card({ name, image, species, type, gender, origin, status }) {
   function renderStatus(status) {
@@ -18,39 +25,48 @@ function Card({ name, image, species, type, gender, origin, status }) {
     }
   }
   return (
-    <Wrapper className="wrapper">
-      <StyledContainer className="container">
-        <div className="character-img">
-          <img src={image} alt="" />
-        </div>
-
-        <div className="character-info">
-          <div>
-            <h2 className="character-name">{name}</h2>
-          </div>
-          <div className="firs-seen">
-            <p className="first-seen-header">
+    <Wrapper>
+      <StyledContainer>
+        <CharacterImageContainer>
+          <CharacterImage src={image} alt="" />
+        </CharacterImageContainer>
+        <CharacterInfo>
+          <CharacterInfoExpressionValue>
+            <CharacterName>{name}</CharacterName>
+          </CharacterInfoExpressionValue>
+          <ResidentInfoWrappter>
+            <CharacterInfoExpression>
               {renderStatus(status)}Current Status:{" "}
-            </p>
-            <p className="first-seen-location">{status}</p>
-          </div>
-          <div className="location">
-            <p className="last-known-location">Species: </p>
-            <p className="location-name">{species}</p>
-          </div>
-          <div className="firs-seen">
-            <p className="first-seen-header">Type: </p>
-            <p className="first-seen-location">{type || "No info"}</p>
-          </div>
-          <div className="firs-seen">
-            <p className="first-seen-header">Gender: </p>
-            <p className="first-seen-location">{gender}</p>
-          </div>
-          <div className="firs-seen">
-            <p className="first-seen-header">Origin</p>
-            <p className="first-seen-location">{origin}</p>
-          </div>
-        </div>
+            </CharacterInfoExpression>
+            <CharacterInfoExpressionValue>
+              {status}
+            </CharacterInfoExpressionValue>
+          </ResidentInfoWrappter>
+          <ResidentInfoWrappter>
+            <CharacterInfoExpression>Species: </CharacterInfoExpression>
+            <CharacterInfoExpressionValue>
+              {species}
+            </CharacterInfoExpressionValue>
+          </ResidentInfoWrappter>
+          <ResidentInfoWrappter>
+            <CharacterInfoExpression>Type: </CharacterInfoExpression>
+            <CharacterInfoExpressionValue>
+              {type || "No info"}
+            </CharacterInfoExpressionValue>
+          </ResidentInfoWrappter>
+          <ResidentInfoWrappter>
+            <CharacterInfoExpression>Gender: </CharacterInfoExpression>
+            <CharacterInfoExpressionValue>
+              {gender}
+            </CharacterInfoExpressionValue>
+          </ResidentInfoWrappter>
+          <ResidentInfoWrappter>
+            <CharacterInfoExpression>Origin</CharacterInfoExpression>
+            <CharacterInfoExpressionValue>
+              {origin}
+            </CharacterInfoExpressionValue>
+          </ResidentInfoWrappter>
+        </CharacterInfo>
       </StyledContainer>
     </Wrapper>
   );

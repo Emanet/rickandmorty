@@ -1,7 +1,16 @@
 import useLocations from "../hooks/useLocations";
 import { useEffect, useState } from "react";
 import React from "react";
-import { Link } from "react-router-dom";
+import {
+  Title,
+  Wrapper,
+  LocationsCard,
+  StyledButton,
+  StyledImage,
+  LocationCardInfo,
+  LocationCardRows,
+  Pagination,
+} from "./styles";
 
 function Locations() {
   const [pageCount, setPageCount] = useState(0);
@@ -11,107 +20,44 @@ function Locations() {
     locations.info.pages && setPageCount(locations.info.pages);
   }, [locations]);
   return (
-    <div>
-      <h1 style={{ textAlign: "center", color: "#F1E0AC" }}>
-        Rick and Morty Locations
-      </h1>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          justifyContent: "center",
-        }}
-      >
+    <>
+      <Title>Rick and Morty Locations</Title>
+      <Wrapper>
         {locations.results.map((item) => {
           return (
-            <Link
+            <LocationsCard
               to={"/residents/" + item.id}
-              style={{
-                display: "flex",
-                background: "#98B4AA",
-                width: "23em",
-                height: "15em",
-                textAlign: "center",
-                flexDirection: "column",
-                margin: "1em",
-                textDecoration: "none",
-                color: "black",
-                borderRadius: "10%",
-              }}
+              style={{}}
               key={item.id}
             >
-              <img
-                style={{ width: "3em", margin: "0 auto", marginTop: "1em" }}
-                src="/assets/location.png"
-                alt="lasdjlasdkljasd"
-              />
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  marginLeft: "3em",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    whiteSpace: "break-spaces",
-                  }}
-                >
+              <StyledImage src="/assets/location.png" alt="lasdjlasdkljasd" />
+              <LocationCardInfo>
+                <LocationCardRows>
                   <strong>Type: </strong> <p>{item.type}</p>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    whiteSpace: "break-spaces",
-                  }}
-                >
+                </LocationCardRows>
+                <LocationCardRows>
                   <strong>Name: </strong> <p>{item.name}</p>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    whiteSpace: "break-spaces",
-                  }}
-                >
+                </LocationCardRows>
+                <LocationCardRows>
                   <strong>Resident Count: </strong>{" "}
                   <p>{item.residents.length}</p>
-                </div>
-              </div>
-            </Link>
+                </LocationCardRows>
+              </LocationCardInfo>
+            </LocationsCard>
           );
         })}
-      </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      </Wrapper>
+      <Pagination>
         {[...Array(pageCount).keys()].map((i) => {
           console.log(pageCount + "pageCount");
           return (
-            <button
-              style={{
-                margin: "1em",
-                width: "3em",
-                height: "3em",
-                borderRadius: "50%",
-                border: "none",
-              }}
-              onClick={() => setCurrentPage(i + 1)}
-              id={i}
-              key={i}
-            >
+            <StyledButton onClick={() => setCurrentPage(i + 1)} id={i} key={i}>
               {i + 1}
-            </button>
+            </StyledButton>
           );
         })}
-      </div>
-    </div>
+      </Pagination>
+    </>
   );
 }
 
