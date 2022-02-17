@@ -12,7 +12,9 @@ function Locations() {
   }, [locations]);
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Rick and Morty Locations</h1>
+      <h1 style={{ textAlign: "center", color: "#F1E0AC" }}>
+        Rick and Morty Locations
+      </h1>
       <div
         style={{
           display: "flex",
@@ -27,7 +29,7 @@ function Locations() {
               to={"/residents/" + item.id}
               style={{
                 display: "flex",
-                background: "#E9DAC1",
+                background: "#98B4AA",
                 width: "23em",
                 height: "15em",
                 textAlign: "center",

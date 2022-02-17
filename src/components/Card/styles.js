@@ -11,18 +11,27 @@ export const DeadStatus = styled.div`
   height: 10px;
   border-radius: 50%;
   background-color: red;
+  position: absolute;
+  margin-left: 11em;
+  margin-top: 4px;
 `;
 export const AliveStatus = styled.div`
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: green;
+  position: absolute;
+  margin-left: 11em;
+  margin-top: 4px;
 `;
 export const UnknownStatus = styled.div`
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: gray;
+  position: absolute;
+  margin-left: 13em;
+  margin-top: 4px;
 `;
 
 export const StyledContainer = styled.div`
@@ -31,7 +40,7 @@ export const StyledContainer = styled.div`
   max-width: 60em;
   display: inline-flex;
   margin: 1em;
-  width: 36em;
+  width: 31em;
   img {
     height: 192px;
     border-top-left-radius: 26%;
@@ -50,7 +59,7 @@ export const StyledContainer = styled.div`
     margin-left: 1em;
     font-size: 14px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     grid-column-gap: 1em;
   }
