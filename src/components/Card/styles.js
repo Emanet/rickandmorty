@@ -33,7 +33,7 @@ export const StyledContainer = styled.div`
   max-width: 60em;
   display: inline-flex;
   margin: 1em;
-  width: 31em;
+  width: 38em;
   @media screen and (max-width: 767px) {
     display: inline-flex;
     flex-direction: column;
@@ -97,7 +97,6 @@ export const Wrapper = styled.div`
     border-radius: 50px;
     display: flex;
     flex-direction: column;
-    height: 27em;
     margin: 1em auto;
   }
 `;
