@@ -8,6 +8,7 @@ function useLocations(index) {
       info{pages}
       results {
         id
+        residents{id}
         name
         type
         dimension

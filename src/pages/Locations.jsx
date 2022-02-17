@@ -80,7 +80,8 @@ function Locations() {
                     whiteSpace: "break-spaces",
                   }}
                 >
-                  <strong>Resident Count: </strong> <p>100</p>
+                  <strong>Resident Count: </strong>{" "}
+                  <p>{item.residents.length}</p>
                 </div>
               </div>
             </Link>

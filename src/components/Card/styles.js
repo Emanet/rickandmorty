@@ -6,6 +6,24 @@ export const Wrapper = styled.div`
     justify-content: center;
   }
 `;
+export const DeadStatus = styled.div`
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+`;
+export const AliveStatus = styled.div`
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+`;
+export const UnknownStatus = styled.div`
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+`;
 
 export const StyledContainer = styled.div`
   background-color: #3c3e44;
@@ -84,7 +102,7 @@ export const StyledContainer = styled.div`
       justify-content: center;
       margin: 1em;
     }
-    img{
+    img {
       border-radius: 50%;
     }
   }
