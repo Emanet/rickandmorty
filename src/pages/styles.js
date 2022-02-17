@@ -52,6 +52,10 @@ export const StyledImage = styled.img`
 export const Pagination = styled.div`
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 `;
 
 // Resident Cards
