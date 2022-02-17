@@ -9,6 +9,10 @@ function Card({ name, image, species, type, gender, origin }) {
         </div>
         <div className="character-info">
           <h2 className="character-name">{name}</h2>
+          <div className="firs-seen">
+            <p className="first-seen-header">Current Status: </p>
+            <p className="first-seen-location">Alive</p>
+          </div>
           {/*   <div className="status">
             <div className="status-code"></div>
             <div className="current-status">
@@ -16,17 +20,17 @@ function Card({ name, image, species, type, gender, origin }) {
             </div>
           </div> */}
           <div className="location">
-            <p className="last-known-location">Species</p>
+            <p className="last-known-location">Species: </p>
             <p className="location-name">{species}</p>
           </div>
           <div className="firs-seen">
-            <p className="first-seen-header">Type</p>
+            <p className="first-seen-header">Type: </p>
             <p className="first-seen-location">
               {type || "There no type information."}
             </p>
           </div>
           <div className="firs-seen">
-            <p className="first-seen-header">Gender</p>
+            <p className="first-seen-header">Gender: </p>
             <p className="first-seen-location">{gender}</p>
           </div>
           <div className="firs-seen">

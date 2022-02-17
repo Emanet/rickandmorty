@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Locations from "./pages/Locations";
 import Residents from "./pages/Residents";
+import "../src/app.css"
 function App() {
   return (
     <Router>

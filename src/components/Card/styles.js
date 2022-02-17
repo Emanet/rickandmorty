@@ -13,21 +13,27 @@ export const StyledContainer = styled.div`
   max-width: 60em;
   display: inline-flex;
   margin: 1em;
-  width: 40em;
+  width: 36em;
+  height: 160px;
   img {
-    height: 320px;
-    border-radius: 51px;
-    max-width: 100%;
+    height: 10em;
+    border-top-left-radius: 31%;
+    border-bottom-left-radius: 31%;
   }
   .character-name {
     color: white;
+    font-size: 17px;
   }
   .character-img {
     display: flex;
   }
   .character-info {
-    margin-left: 3em;
+    margin-top: -10px;
+    margin-left: 1em;
     font-size: 14px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
   }
   .current-status {
     display: inline-block;
@@ -47,9 +53,17 @@ export const StyledContainer = styled.div`
   }
   .first-seen-header {
     color: #9e9e9e;
+    white-space: 1;
   }
   .first-seen-location {
     color: #e6e6e7;
+  }
+  .location {
+    display: flex;
+  }
+  .firs-seen {
+    display: flex;
+    white-space: pre-wrap;
   }
   @media screen and (max-width: 767px) {
     background-color: #3c3e44;
@@ -59,5 +73,17 @@ export const StyledContainer = styled.div`
     flex-direction: column;
     height: fit-content;
     margin: 1 auto;
+    .character-info {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .character-img {
+      justify-content: center;
+      margin: 1em;
+    }
+    img{
+      border-radius: 50%;
+    }
   }
 `;
