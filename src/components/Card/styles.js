@@ -14,15 +14,15 @@ export const StyledContainer = styled.div`
   display: inline-flex;
   margin: 1em;
   width: 36em;
-  height: 160px;
   img {
-    height: 10em;
-    border-top-left-radius: 31%;
-    border-bottom-left-radius: 31%;
+    height: 192px;
+    border-top-left-radius: 26%;
+    border-bottom-left-radius: 26%;
   }
   .character-name {
     color: white;
     font-size: 17px;
+    grid-column: 1/3;
   }
   .character-img {
     display: flex;
@@ -32,8 +32,9 @@ export const StyledContainer = styled.div`
     margin-left: 1em;
     font-size: 14px;
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
+    grid-column-gap: 1em;
   }
   .current-status {
     display: inline-block;
@@ -71,12 +72,13 @@ export const StyledContainer = styled.div`
     max-width: 16em;
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: 32em;
     margin: 1 auto;
     .character-info {
       margin: 0 auto;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
     }
     .character-img {
       justify-content: center;
