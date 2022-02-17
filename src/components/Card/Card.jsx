@@ -1,17 +1,20 @@
 import React from "react";
 import { StyledContainer, Wrapper } from "./styles";
-function Card({ name, image, species, type, gender, origin }) {
+function Card({ name, image, species, type, gender, origin, status }) {
   return (
     <Wrapper className="wrapper">
       <StyledContainer className="container">
         <div className="character-img">
           <img src={image} alt="" />
         </div>
+
         <div className="character-info">
-          <h2 className="character-name">{name}</h2>
+          <div>
+            <h2 className="character-name">{name}</h2>
+          </div>
           <div className="firs-seen">
             <p className="first-seen-header">Current Status: </p>
-            <p className="first-seen-location">Alive</p>
+            <p className="first-seen-location">{status}</p>
           </div>
           {/*   <div className="status">
             <div className="status-code"></div>
@@ -25,9 +28,7 @@ function Card({ name, image, species, type, gender, origin }) {
           </div>
           <div className="firs-seen">
             <p className="first-seen-header">Type: </p>
-            <p className="first-seen-location">
-              {type || "There no type information."}
-            </p>
+            <p className="first-seen-location">{type || "No info"}</p>
           </div>
           <div className="firs-seen">
             <p className="first-seen-header">Gender: </p>

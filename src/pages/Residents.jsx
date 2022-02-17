@@ -17,6 +17,7 @@ function Residents() {
             type={item.type}
             gender={item.gender}
             origin={item.origin.name}
+            status={item.status}
           />
         ))}
       </div>

@@ -12,7 +12,7 @@ function Locations() {
   }, [locations]);
   return (
     <div>
-      <h1 style={{textAlign:"center"}}>Rick and Morty Locations</h1>
+      <h1 style={{ textAlign: "center" }}>Rick and Morty Locations</h1>
       <div
         style={{
           display: "flex",
@@ -49,7 +49,7 @@ function Locations() {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "flex-start",
-                  margin: "0 auto",
+                  marginLeft: "3em",
                 }}
               >
                 <div
@@ -97,7 +97,7 @@ function Locations() {
                 width: "3em",
                 height: "3em",
                 borderRadius: "50%",
-                border:"none"
+                border: "none",
               }}
               onClick={() => setCurrentPage(i + 1)}
               id={i}
