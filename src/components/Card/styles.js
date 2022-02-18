@@ -46,7 +46,7 @@ export const CharacterInfo = styled.div`
   margin-left: 1em;
   font-size: 14px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
   align-items: center;
   grid-column-gap: 1em;
   @media screen and (max-width: 767px) {
