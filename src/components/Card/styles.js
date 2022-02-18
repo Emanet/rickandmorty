@@ -33,7 +33,7 @@ export const StyledContainer = styled.div`
   max-width: 60em;
   display: inline-flex;
   margin: 1em;
-  width: 38em;
+  width: 610px;
   @media screen and (max-width: 767px) {
     display: inline-flex;
     flex-direction: column;
