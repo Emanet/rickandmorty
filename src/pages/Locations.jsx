@@ -25,11 +25,7 @@ function Locations() {
       <Wrapper>
         {locations.results.map((item) => {
           return (
-            <LocationsCard
-              to={"/residents/" + item.id}
-              style={{}}
-              key={item.id}
-            >
+            <LocationsCard to={"/residents/" + item.id} key={item.id}>
               <StyledImage src="/assets/location.png" alt="lasdjlasdkljasd" />
               <LocationCardInfo>
                 <LocationCardRows>
