@@ -13,8 +13,8 @@ Bu mini projenin amacı React teknolojisi üzerine pratik yapmaktır.
 **GraphQL**
 
 ## To-Do
-- Lokasyona vatandaş sayısını ekleme
-- Residents kartlarına status kod ekleme
+- Lokasyona vatandaş sayısını ekleme //Tamamlandı
+- Residents kartlarına status kod ekleme //Tamamlandı
 ## Yükleme
 
 ```bash 
